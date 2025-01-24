@@ -1,0 +1,35 @@
+{
+    "timestamp": "2025-01-25T14:30:00Z",
+    "serverId": "SRV-12345",
+    "serverName": "Production-Server-1",
+    "status": "DOWN",
+    "severity": "Critical",
+    "errorCode": "500",
+    "message": "The server is currently unavailable due to unexpected failure.",
+    "startTime": "2025-01-25T14:00:00Z",
+    "expectedRecoveryTime": "2025-01-25T16:00:00Z",
+    "impact": {
+      "affectedServices": ["API Gateway", "Database", "Authentication Service"],
+      "usersAffected": 5000,
+      "regionsImpacted": ["US-East", "EU-West"]
+    },
+    "contact": {
+      "team": "Infrastructure Support",
+      "email": "support@example.com",
+      "phone": "+1-800-555-1234"
+    },
+    "actionsTaken": [
+      {
+        "action": "Restarted server instance",
+        "timestamp": "2025-01-25T14:15:00Z",
+        "status": "Failed"
+      },
+      {
+        "action": "Notified on-call engineer",
+        "timestamp": "2025-01-25T14:20:00Z",
+        "status": "Completed"
+      }
+    ],
+    "nextSteps": "Investigating root cause and restoring services."
+  }
+  
